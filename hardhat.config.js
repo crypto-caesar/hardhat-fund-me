@@ -39,8 +39,7 @@ module.exports = {
             chainId: 31337,
         },
         sepolia: {
-            // url: SEPOLIA_RPC_URL, changed this because deploying gave me an error w/ URL
-            url: "https://eth-sepolia.g.alchemy.com/v2/lBKXzZrrx1YTcZlAJRHS1cOnFD1Au8ug",
+            url: SEPOLIA_RPC_URL, 
             accounts: PRIVATE_KEY !== undefined ? [PRIVATE_KEY] : [],
             //   accounts: {
             //     mnemonic: MNEMONIC,
@@ -58,8 +57,7 @@ module.exports = {
             chainId: 1,
         },
         goerli: {
-            //url: GOERLI_RPC_URL, changed this because deploying gave me an error w/ URL
-            url: "https://eth-goerli.g.alchemy.com/v2/qLKc15Zz3HnZ7knXDjgSwNt8g34HbzPD",
+            url: GOERLI_RPC_URL, 
             accounts: [PRIVATE_KEY],
             chainId: 5,
             blockConfirmations: 6,
